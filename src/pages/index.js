@@ -1,184 +1,238 @@
-import * as React from "react"
-
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-}
-
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
-
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
-
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
-
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
-
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-}
-
-// data
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#8EB814",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    color: "#663399",
-  },
-]
+import "./styles.css";
+import React, { useState, useEffect } from "react";
+import { Typography, Container, Grid, CssBaseline } from "@material-ui/core";
+import { makeStyles, useTheme } from "@material-ui/styles";
+import PropTypes from "prop-types";
+import Cardtemplate from "./components/Cardtemplate.js";
 
 // markup
-const IndexPage = () => {
+export default function IndexPage() {
+  const [value, setValue] = useState(0);
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  const handleChangeIndex = (index) => {
+    setValue(index);
+  };
   return (
-    <main style={pageStyles}>
-      <title>Home Page</title>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
-        <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
-        </span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time.{" "}
-        <span role="img" aria-label="Sunglasses smiley emoji">
-          😎
-        </span>
-      </p>
-      <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
-        </li>
-        {links.map(link => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-              >
-                {link.text}
-              </a>
-              {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
-                  NEW!
-                </span>
-              )}
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      />
+    <main>
+      <title>My Twitter Bookmarks</title>
+      <div className="App">
+      <CssBaseline />
+      <section className="section header">
+        <Container maxwidth="xl">
+          <div className="header">
+            <h1>Hello! I store my twitter bookmarks here!</h1>
+            <h2>They are categorized accordingly</h2>
+          </div>
+        </Container>
+      </section>
+
+      <section className="section body">
+        <Container maxwidth="xl">
+          <div className="bookmarkCat">
+            <h3>Coding resources</h3>
+            <Grid container spacing={5}>
+              <Grid item xl={3} sm={3}>
+                <Cardtemplate
+                  bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
+                  srcImage="https://pbs.twimg.com/profile_images/1474033070323896323/OxmVHLRD_400x400.jpg"
+                  title="Free web design e-books"
+                  description="twitter thread of free e-books"
+                  tweetLink="https://twitter.com/designerSaha/status/1480449836503617540?s=20"
+                />
+              </Grid>
+              <Grid item xl={3} sm={3}>
+                <Cardtemplate
+                  bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
+                  srcImage="https://pbs.twimg.com/profile_images/1451917571633025033/COe3aQAb_400x400.jpg"
+                  title="learning js"
+                  description="websites to help in learning javascript"
+                  tweetLink="https://twitter.com/swastika0015/status/1478962049170518018?s=20"
+                />
+              </Grid>
+            </Grid>
+          </div>
+
+          <div className="bookmarkCat">
+            <h3>Cool art</h3>
+            <Grid container>
+              <h4>Backgrounds</h4>
+              <Grid container spacing={5}>
+                <Grid item xl={3} sm={3}>
+                  <Cardtemplate
+                    bgImgURL="https://pbs.twimg.com/media/FIa1FSpXIAcaOSw?format=jpg&name=large"
+                    srcImage="https://pbs.twimg.com/profile_images/1345650468509331456/PBymlVbc_400x400.png"
+                    title="cool backgrounds"
+                    description="by @ani_obsessive"
+                    tweetLink="https://twitter.com/ani_obsessive/status/1479068915586191360?s=20"
+                  />
+                </Grid>
+                <Grid item xl={3} sm={3}>
+                  <Cardtemplate
+                    bgImgURL="https://pbs.twimg.com/media/FIUbF7wVcAAvcVr?format=jpg&name=4096x4096"
+                    srcImage="https://pbs.twimg.com/profile_images/1090888684973355013/g1TQnuLP_400x400.jpg"
+                    title="Pretty car"
+                    description="cool bg painting by @glendalesidiot"
+                    tweetLink="https://twitter.com/glendalesidiot/status/1478618432564125697?s=20"
+                  />
+                </Grid>
+                <Grid item xl={3} sm={3}>
+                  <Cardtemplate
+                    bgImgURL="https://pbs.twimg.com/media/FH-UhiEVkAAuZjp?format=jpg&name=medium"
+                    srcImage="https://pbs.twimg.com/profile_images/1105971791309111297/UlOjsM-a_400x400.png"
+                    title="Tigers"
+                    description="some cool tiger paintings and stuff"
+                    tweetLink="https://twitter.com/nkim_illustrate/status/1477062508229783556?s=20"
+                  />
+                </Grid>
+                <Grid item xl={3} sm={3}>
+                  <Cardtemplate
+                    bgImgURL="https://pbs.twimg.com/media/FIQlzlAX0AIYPAE?format=jpg&name=large"
+                    srcImage="https://pbs.twimg.com/profile_images/1345650468509331456/PBymlVbc_400x400.png"
+                    title="concept art for Beauty and the Beast"
+                    description="by Hans Bacher for the 1991 movie"
+                    tweetLink="https://twitter.com/ani_obsessive/status/1478348251518709769?s=20"
+                  />
+                </Grid>
+                <Grid item xl={3} sm={3}>
+                  <Cardtemplate
+                    bgImgURL="https://pbs.twimg.com/media/FIRfXwpWQAUNb9j?format=jpg&name=4096x4096"
+                    srcImage="https://pbs.twimg.com/profile_images/1341260101332725761/sMzt-U_z_400x400.jpg"
+                    title="Bathroom for we baby bears"
+                    description="painting by Nessa Tweneboah"
+                    tweetLink="https://twitter.com/Thepotenpro/status/1478417470428000258?s=20"
+                  />
+                </Grid>
+              </Grid>
+
+              <h4>Characters</h4>
+              <Grid container spacing={5}>
+                <Grid item xl={3} sm={3}>
+                  <Cardtemplate
+                    bgImgURL="https://pbs.twimg.com/media/FIiuArkVIAAU6k4?format=jpg&name=large"
+                    srcImage="https://pbs.twimg.com/profile_images/1443317526788644865/-yz95icp_400x400.jpg"
+                    title="Self portrait by @friedbaens"
+                    description="cool art with cool textures by twitter artist"
+                    tweetLink="https://twitter.com/friedbaens/status/1479623812371009537?s=20"
+                  />
+                </Grid>
+                <Grid item xl={3} sm={3}></Grid>
+              </Grid>
+
+              <h4>Fan art</h4>
+              <Grid container spacing={5}>
+                <Grid item xl={3} sm={3}>
+                  <Cardtemplate
+                    bgImgURL="https://pbs.twimg.com/media/FInRl5MacAAWX9o?format=jpg&name=360x360"
+                    srcImage="https://pbs.twimg.com/profile_images/1480175854080921602/BdkXyt1__400x400.jpg"
+                    title="Encanto"
+                    description="Dolores and Mariano being dweebs by @komemerda"
+                    tweetLink="https://twitter.com/komemerda/status/1479944412386172928?s=20"
+                  />
+                </Grid>
+                <Grid item xl={3} sm={3}>
+                  <Cardtemplate
+                    bgImgURL="https://pbs.twimg.com/media/FIWGa0sUcAY04JF?format=jpg&name=4096x4096"
+                    srcImage="https://pbs.twimg.com/profile_images/1354315224623378437/nZz6Aw9t_400x400.jpg"
+                    title="Pepa and Felix"
+                    description="adorable fan art of how Pepa could have gotten hear cool sun earrings"
+                    tweetLink="https://twitter.com/kianamaiart/status/1478736079649796096?s=20"
+                  />
+                </Grid>
+              </Grid>
+            </Grid>
+          </div>
+
+          <div className="bookmarkCat">
+            <h3>Art references</h3>
+            <Grid container spacing={5}>
+              <Grid item xl={3} sm={3}>
+                <Cardtemplate
+                  bgImgURL="https://pbs.twimg.com/media/FIajes2XIAcz8l3?format=jpg&name=900x900"
+                  srcImage="https://pbs.twimg.com/profile_images/1759638070/Picture_4_400x400.png"
+                  title="Wings tutorial"
+                  description="by @EtheringtonBros on twitter"
+                  tweetLink="https://twitter.com/EtheringtonBros/status/1479049652729225224?s=20"
+                />
+              </Grid>
+            </Grid>
+          </div>
+
+          <div className="bookmarkCat">
+            <h3>I want to buy</h3>
+            <Grid container spacing={5}>
+              <Grid item xl={3} sm={3}></Grid>
+            </Grid>
+          </div>
+
+          <div className="bookmarkCat">
+            <h3>Craft things</h3>
+            <Grid container spacing={5}>
+              <Grid item xl={3} sm={3}></Grid>
+            </Grid>
+          </div>
+
+          <div className="bookmarkCat">
+            <h3>Animal Crossing</h3>
+            <Grid container spacing={5}>
+              <Grid item xl={3} sm={3}>
+                <Cardtemplate
+                    bgImgURL="https://pbs.twimg.com/media/FDeZFHBVkAQ1oDX?format=jpg&name=large"
+                    srcImage="https://pbs.twimg.com/profile_images/1280865685460172800/c5ieI0WI_400x400.jpg"
+                    title="Funny goth sheep"
+                    description="from @AnhNmalCrossng on twitter"
+                    tweetLink="https://twitter.com/AnhNmalCrossng/status/1456801319381917699?s=20"
+                  />
+              </Grid>
+
+              <Grid item xl={3} sm={3}>
+                <Cardtemplate
+                    bgImgURL="https://pbs.twimg.com/media/FDooXkeVEAU_Ypm?format=jpg&name=large"
+                    srcImage="https://pbs.twimg.com/profile_images/1280865685460172800/c5ieI0WI_400x400.jpg"
+                    title="Funny bird guy"
+                    description="from @AnhNmalCrossng on twitter"
+                    tweetLink="https://twitter.com/AnhNmalCrossng/status/1457521816730173442?s=20"
+                  />
+              </Grid>
+
+              <Grid item xl={3} sm={3}>
+                <Cardtemplate
+                    bgImgURL="https://pbs.twimg.com/media/FHEzd-iVIAA2cwb?format=jpg&name=large"
+                    srcImage="https://pbs.twimg.com/profile_images/1280865685460172800/c5ieI0WI_400x400.jpg"
+                    title="Cafe photo"
+                    description="from @AnhNmalCrossng on twitter"
+                    tweetLink="https://twitter.com/AnhNmalCrossng/status/1473015145001472000?s=20"
+                  />
+              </Grid>
+
+               <Grid item xl={3} sm={3}>
+                <Cardtemplate
+                    bgImgURL="https://pbs.twimg.com/media/FHoe2c1VcAEdt8k?format=jpg&name=large"
+                    srcImage="https://pbs.twimg.com/profile_images/1280865685460172800/c5ieI0WI_400x400.jpg"
+                    title="class photo"
+                    description="from @AnhNmalCrossng on twitter"
+                    tweetLink="https://twitter.com/AnhNmalCrossng/status/1475525750597951490?s=20"
+                  />
+              </Grid>
+
+              <Grid item xl={3} sm={3}>
+                <Cardtemplate
+                  bgImgURL="https://pbs.twimg.com/media/FIRZ9EPVgAEVj3k?format=jpg&name=large"
+                  srcImage="https://pbs.twimg.com/profile_images/1383118033036673031/s-5TFCqi_400x400.jpg"
+                  title="Celeste and Brooster"
+                  description="from @aresangel on twitter"
+                  tweetLink="https://twitter.com/aresangel/status/1478405485053108226?s=20"
+                />
+              </Grid>
+            </Grid>
+          </div>
+        </Container>
+      </section>
+    </div>
     </main>
   )
 }
 
-export default IndexPage
+// export default IndexPage

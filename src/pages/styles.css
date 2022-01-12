@@ -1,0 +1,15 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: beige;
+  margin: 0em;
+}
+
+.bookmarkCat {
+  background-color: burlywood;
+  padding: 2em;
+}
+
+.pfp {
+  width: 100%;
+}
