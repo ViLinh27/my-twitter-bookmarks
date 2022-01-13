@@ -70,6 +70,15 @@ export default function IndexPage() {
                   tweetLink="https://twitter.com/saviomartin7/status/1472808997820383234?s=20"
                 />
               </Grid>
+              <Grid item xl={3} sm={3}>
+                <Cardtemplate
+                  bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
+                  srcImage="https://pbs.twimg.com/profile_images/1476905990855475205/VskPkdVv_400x400.png"
+                  title="front end roadmap/resources i guess"
+                  description="by @VittoStack"
+                  tweetLink="https://twitter.com/VittoStack/status/1481663360932397058?s=20"
+                />
+              </Grid>
             </Grid>
           </div>
 
@@ -120,6 +129,33 @@ export default function IndexPage() {
                     title="Bathroom for we baby bears"
                     description="painting by Nessa Tweneboah"
                     tweetLink="https://twitter.com/Thepotenpro/status/1478417470428000258?s=20"
+                  />
+                </Grid>
+                <Grid item xl={3} sm={3}>
+                  <Cardtemplate
+                    bgImgURL="https://pbs.twimg.com/media/FJAM2jXUYAEExO0?format=jpg&name=large"
+                    srcImage="https://pbs.twimg.com/profile_images/1455479183346257924/wRoBZk2U_400x400.jpg"
+                    title="bg paint by @crimsolynn"
+                    description="mapcrunch study. so pretty"
+                    tweetLink="https://twitter.com/crimsolynn/status/1481698410939904000?s=20"
+                  />
+                </Grid>
+                <Grid item xl={3} sm={3}>
+                  <Cardtemplate
+                  bgImgURL="https://pbs.twimg.com/media/FI9WsgAVgAQSrhk?format=jpg&name=large"
+                  srcImage="https://pbs.twimg.com/profile_images/1364019383354290178/5-mHH45K_400x400.jpg"
+                  title="bg done for @webabybears"
+                  description="done by @Tina_Draws. so amazing"
+                  tweetLink="https://twitter.com/Tina_Draws/status/1481498133288734722?s=20"
+                  />
+                </Grid>
+                <Grid item xl={3} sm={3}>
+                  <Cardtemplate
+                    bgImgURL="https://pbs.twimg.com/media/FI7Y4ydX0A41V0j?format=jpg&name=large"
+                    srcImage="https://pbs.twimg.com/profile_images/1379782101168496642/e-ah_NV7_400x400.jpg"
+                    title="portfolio from @jstuffdesigns"
+                    description="alot of architecture and environment stuff"
+                    tweetLink="https://twitter.com/jtuffdesigns/status/1481361114571153408?s=20"
                   />
                 </Grid>
               </Grid>
