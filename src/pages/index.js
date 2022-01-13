@@ -1,11 +1,12 @@
 import "./styles.css";
 import React, { useState, useEffect } from "react";
 import { Typography, Container, Grid, CssBaseline } from "@material-ui/core";
-import { makeStyles, useTheme } from "@material-ui/styles";
-import PropTypes from "prop-types";
 import Cardtemplate from "./components/Cardtemplate.js";
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-// markup
 export default function IndexPage() {
   const [value, setValue] = useState(0);
   const handleChange = (event, newValue) => {
@@ -32,54 +33,64 @@ export default function IndexPage() {
       <section className="section body">
         <Container maxwidth="xl">
           <div className="bookmarkCat">
-            <h3>Coding resources</h3>
-            <Grid container spacing={5}>
-              <Grid item xl={3} sm={3}>
-                <Cardtemplate
-                  bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
-                  srcImage="https://pbs.twimg.com/profile_images/1474033070323896323/OxmVHLRD_400x400.jpg"
-                  title="Free web design e-books"
-                  description="twitter thread of free e-books"
-                  tweetLink="https://twitter.com/designerSaha/status/1480449836503617540?s=20"
-                />
-              </Grid>
-              <Grid item xl={3} sm={3}>
-                <Cardtemplate
-                  bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
-                  srcImage="https://pbs.twimg.com/profile_images/1451917571633025033/COe3aQAb_400x400.jpg"
-                  title="learning js"
-                  description="websites to help in learning javascript"
-                  tweetLink="https://twitter.com/swastika0015/status/1478962049170518018?s=20"
-                />
-              </Grid>
-              <Grid item xl={3} sm={3}>
-                <Cardtemplate
-                  bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
-                  srcImage="https://pbs.twimg.com/profile_images/1435853099600474117/rjDQ_RSZ_400x400.jpg"
-                  title="project ideas"
-                  description="some free html/css projects from Mohammed Junaid"
-                  tweetLink="https://twitter.com/mdjunaidap/status/1473871417867333634?s=20"
-                />
-              </Grid>
-              <Grid item xl={3} sm={3}>
-                <Cardtemplate
-                  bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
-                  srcImage="https://pbs.twimg.com/profile_images/1471847814422568965/zQG2Lrkv_400x400.jpg"
-                  title="css generators"
-                  description="help if you don't want to do all the shit from scratch"
-                  tweetLink="https://twitter.com/saviomartin7/status/1472808997820383234?s=20"
-                />
-              </Grid>
-              <Grid item xl={3} sm={3}>
-                <Cardtemplate
-                  bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
-                  srcImage="https://pbs.twimg.com/profile_images/1476905990855475205/VskPkdVv_400x400.png"
-                  title="front end roadmap/resources i guess"
-                  description="by @VittoStack"
-                  tweetLink="https://twitter.com/VittoStack/status/1481663360932397058?s=20"
-                />
-              </Grid>
-            </Grid>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <h3>Coding resources</h3>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Grid container spacing={5}>
+                  <Grid item xl={3} sm={3}>
+                    <Cardtemplate
+                      bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
+                      srcImage="https://pbs.twimg.com/profile_images/1474033070323896323/OxmVHLRD_400x400.jpg"
+                      title="Free web design e-books"
+                      description="twitter thread of free e-books"
+                      tweetLink="https://twitter.com/designerSaha/status/1480449836503617540?s=20"
+                    />
+                  </Grid>
+                  <Grid item xl={3} sm={3}>
+                    <Cardtemplate
+                      bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
+                      srcImage="https://pbs.twimg.com/profile_images/1451917571633025033/COe3aQAb_400x400.jpg"
+                      title="learning js"
+                      description="websites to help in learning javascript"
+                      tweetLink="https://twitter.com/swastika0015/status/1478962049170518018?s=20"
+                    />
+                  </Grid>
+                  <Grid item xl={3} sm={3}>
+                    <Cardtemplate
+                      bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
+                      srcImage="https://pbs.twimg.com/profile_images/1435853099600474117/rjDQ_RSZ_400x400.jpg"
+                      title="project ideas"
+                      description="some free html/css projects from Mohammed Junaid"
+                      tweetLink="https://twitter.com/mdjunaidap/status/1473871417867333634?s=20"
+                    />
+                  </Grid>
+                  <Grid item xl={3} sm={3}>
+                    <Cardtemplate
+                      bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
+                      srcImage="https://pbs.twimg.com/profile_images/1471847814422568965/zQG2Lrkv_400x400.jpg"
+                      title="css generators"
+                      description="help if you don't want to do all the shit from scratch"
+                      tweetLink="https://twitter.com/saviomartin7/status/1472808997820383234?s=20"
+                    />
+                  </Grid>
+                  <Grid item xl={3} sm={3}>
+                    <Cardtemplate
+                      bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
+                      srcImage="https://pbs.twimg.com/profile_images/1476905990855475205/VskPkdVv_400x400.png"
+                      title="front end roadmap/resources i guess"
+                      description="by @VittoStack"
+                      tweetLink="https://twitter.com/VittoStack/status/1481663360932397058?s=20"
+                    />
+                  </Grid>
+                </Grid>
+              </AccordionDetails>
+            </Accordion>
           </div>
 
           <div className="bookmarkCat">
