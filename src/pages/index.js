@@ -52,12 +52,29 @@ export default function IndexPage() {
                   tweetLink="https://twitter.com/swastika0015/status/1478962049170518018?s=20"
                 />
               </Grid>
+              <Grid item xl={3} sm={3}>
+                <Cardtemplate
+                  bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
+                  srcImage="https://pbs.twimg.com/profile_images/1435853099600474117/rjDQ_RSZ_400x400.jpg"
+                  title="project ideas"
+                  description="some free html/css projects from Mohammed Junaid"
+                  tweetLink="https://twitter.com/mdjunaidap/status/1473871417867333634?s=20"
+                />
+              </Grid>
+              <Grid item xl={3} sm={3}>
+                <Cardtemplate
+                  bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
+                  srcImage="https://pbs.twimg.com/profile_images/1471847814422568965/zQG2Lrkv_400x400.jpg"
+                  title="css generators"
+                  description="help if you don't want to do all the shit from scratch"
+                  tweetLink="https://twitter.com/saviomartin7/status/1472808997820383234?s=20"
+                />
+              </Grid>
             </Grid>
           </div>
 
           <div className="bookmarkCat">
             <h3>Cool art</h3>
-            <Grid container>
               <h4>Backgrounds</h4>
               <Grid container spacing={5}>
                 <Grid item xl={3} sm={3}>
@@ -142,11 +159,11 @@ export default function IndexPage() {
                   />
                 </Grid>
               </Grid>
-            </Grid>
           </div>
 
           <div className="bookmarkCat">
             <h3>Art references</h3>
+            <h4>Tutorials</h4>
             <Grid container spacing={5}>
               <Grid item xl={3} sm={3}>
                 <Cardtemplate
@@ -155,6 +172,18 @@ export default function IndexPage() {
                   title="Wings tutorial"
                   description="by @EtheringtonBros on twitter"
                   tweetLink="https://twitter.com/EtheringtonBros/status/1479049652729225224?s=20"
+                />
+              </Grid>
+            </Grid>
+            <h4>Looks fun to draw</h4>
+            <Grid container spacing={5}>
+              <Grid item xl={3} sm={3}>
+                <Cardtemplate
+                  bgImgURL="https://pbs.twimg.com/media/FIEV535XoAIQjzZ?format=jpg&name=large"
+                  srcImage="https://pbs.twimg.com/profile_images/1351792019354611712/kkprLZfI_400x400.jpg"
+                  title="Some lady's pretty new year outfit"
+                  description="Looked fun to draw"
+                  tweetLink="https://twitter.com/tharmeega/status/1477486243848105986?s=20"
                 />
               </Grid>
             </Grid>
