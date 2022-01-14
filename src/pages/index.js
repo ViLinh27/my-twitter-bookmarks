@@ -266,10 +266,20 @@ export default function IndexPage() {
           </div>
 
           <div className="bookmarkCat">
-            <h3>I want to buy</h3>
-            <Grid container spacing={5}>
-              <Grid item xl={3} sm={3}></Grid>
-            </Grid>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <h3>I want to buy</h3>
+              </AccordionSummary>
+              <AccordionDetails>
+                  <Grid container spacing={5}>
+                    <Grid item xl={3} sm={3}></Grid>
+                  </Grid>
+              </AccordionDetails>
+            </Accordion>
           </div>
 
           <div className="bookmarkCat">
@@ -280,58 +290,68 @@ export default function IndexPage() {
           </div>
 
           <div className="bookmarkCat">
-            <h3>Animal Crossing</h3>
-            <Grid container spacing={5}>
-              <Grid item xl={3} sm={3}>
-                <Cardtemplate
-                    bgImgURL="https://pbs.twimg.com/media/FDeZFHBVkAQ1oDX?format=jpg&name=large"
-                    srcImage="https://pbs.twimg.com/profile_images/1280865685460172800/c5ieI0WI_400x400.jpg"
-                    title="Funny goth sheep"
-                    description="from @AnhNmalCrossng on twitter"
-                    tweetLink="https://twitter.com/AnhNmalCrossng/status/1456801319381917699?s=20"
-                  />
-              </Grid>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <h3>Animal Crossing</h3>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Grid container spacing={5}>
+                  <Grid item xl={3} sm={3}>
+                    <Cardtemplate
+                        bgImgURL="https://pbs.twimg.com/media/FDeZFHBVkAQ1oDX?format=jpg&name=large"
+                        srcImage="https://pbs.twimg.com/profile_images/1280865685460172800/c5ieI0WI_400x400.jpg"
+                        title="Funny goth sheep"
+                        description="from @AnhNmalCrossng on twitter"
+                        tweetLink="https://twitter.com/AnhNmalCrossng/status/1456801319381917699?s=20"
+                      />
+                  </Grid>
 
-              <Grid item xl={3} sm={3}>
-                <Cardtemplate
-                    bgImgURL="https://pbs.twimg.com/media/FDooXkeVEAU_Ypm?format=jpg&name=large"
-                    srcImage="https://pbs.twimg.com/profile_images/1280865685460172800/c5ieI0WI_400x400.jpg"
-                    title="Funny bird guy"
-                    description="from @AnhNmalCrossng on twitter"
-                    tweetLink="https://twitter.com/AnhNmalCrossng/status/1457521816730173442?s=20"
-                  />
-              </Grid>
+                  <Grid item xl={3} sm={3}>
+                    <Cardtemplate
+                        bgImgURL="https://pbs.twimg.com/media/FDooXkeVEAU_Ypm?format=jpg&name=large"
+                        srcImage="https://pbs.twimg.com/profile_images/1280865685460172800/c5ieI0WI_400x400.jpg"
+                        title="Funny bird guy"
+                        description="from @AnhNmalCrossng on twitter"
+                        tweetLink="https://twitter.com/AnhNmalCrossng/status/1457521816730173442?s=20"
+                      />
+                  </Grid>
 
-              <Grid item xl={3} sm={3}>
-                <Cardtemplate
-                    bgImgURL="https://pbs.twimg.com/media/FHEzd-iVIAA2cwb?format=jpg&name=large"
-                    srcImage="https://pbs.twimg.com/profile_images/1280865685460172800/c5ieI0WI_400x400.jpg"
-                    title="Cafe photo"
-                    description="from @AnhNmalCrossng on twitter"
-                    tweetLink="https://twitter.com/AnhNmalCrossng/status/1473015145001472000?s=20"
-                  />
-              </Grid>
+                  <Grid item xl={3} sm={3}>
+                    <Cardtemplate
+                        bgImgURL="https://pbs.twimg.com/media/FHEzd-iVIAA2cwb?format=jpg&name=large"
+                        srcImage="https://pbs.twimg.com/profile_images/1280865685460172800/c5ieI0WI_400x400.jpg"
+                        title="Cafe photo"
+                        description="from @AnhNmalCrossng on twitter"
+                        tweetLink="https://twitter.com/AnhNmalCrossng/status/1473015145001472000?s=20"
+                      />
+                  </Grid>
 
-               <Grid item xl={3} sm={3}>
-                <Cardtemplate
-                    bgImgURL="https://pbs.twimg.com/media/FHoe2c1VcAEdt8k?format=jpg&name=large"
-                    srcImage="https://pbs.twimg.com/profile_images/1280865685460172800/c5ieI0WI_400x400.jpg"
-                    title="class photo"
-                    description="from @AnhNmalCrossng on twitter"
-                    tweetLink="https://twitter.com/AnhNmalCrossng/status/1475525750597951490?s=20"
-                  />
-              </Grid>
+                  <Grid item xl={3} sm={3}>
+                    <Cardtemplate
+                        bgImgURL="https://pbs.twimg.com/media/FHoe2c1VcAEdt8k?format=jpg&name=large"
+                        srcImage="https://pbs.twimg.com/profile_images/1280865685460172800/c5ieI0WI_400x400.jpg"
+                        title="class photo"
+                        description="from @AnhNmalCrossng on twitter"
+                        tweetLink="https://twitter.com/AnhNmalCrossng/status/1475525750597951490?s=20"
+                      />
+                  </Grid>
 
-              <Grid item xl={3} sm={3}>
-                <Cardtemplate
-                  bgImgURL="https://pbs.twimg.com/media/FIRZ9EPVgAEVj3k?format=jpg&name=large"
-                  srcImage="https://pbs.twimg.com/profile_images/1383118033036673031/s-5TFCqi_400x400.jpg"
-                  title="Celeste and Brooster"
-                  description="from @aresangel on twitter"
-                  tweetLink="https://twitter.com/aresangel/status/1478405485053108226?s=20"
-                />
-              </Grid>
-            </Grid>
+                  <Grid item xl={3} sm={3}>
+                    <Cardtemplate
+                      bgImgURL="https://pbs.twimg.com/media/FIRZ9EPVgAEVj3k?format=jpg&name=large"
+                      srcImage="https://pbs.twimg.com/profile_images/1383118033036673031/s-5TFCqi_400x400.jpg"
+                      title="Celeste and Brooster"
+                      description="from @aresangel on twitter"
+                      tweetLink="https://twitter.com/aresangel/status/1478405485053108226?s=20"
+                    />
+                  </Grid>
+                </Grid>
+              </AccordionDetails>
+            </Accordion>
           </div>
         </Container>
       </section>
