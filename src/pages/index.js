@@ -21,6 +21,8 @@ export default function IndexPage() {
       <title>My Twitter Bookmarks</title>
       <div className="App">
       <CssBaseline />
+
+      {/*----------------------- header --------------------------*/}
       <section className="section header">
         <Container maxwidth="xl">
           <div className="header">
@@ -29,11 +31,14 @@ export default function IndexPage() {
           </div>
         </Container>
       </section>
+      {/*----------------------- end of header --------------------------*/}
 
+      {/*----------------------- Body of page --------------------------*/}
       <section className="section body">
         <Container maxwidth="xl">
+          {/*----------------------- Coding resources --------------------------*/}
           <div className="bookmarkCat">
-            <Accordion>
+            <Accordion className="accordion01">
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
@@ -41,6 +46,7 @@ export default function IndexPage() {
               >
                 <h3>Coding resources</h3>
               </AccordionSummary>
+
               <AccordionDetails>
                 <Grid container spacing={5}>
                   <Grid item xl={3} sm={3}>
@@ -89,12 +95,15 @@ export default function IndexPage() {
                     />
                   </Grid>
                 </Grid>
+                {/*----------------------- end of grid container --------------------------*/}
               </AccordionDetails>
             </Accordion>
           </div>
+          {/*----------------------- end of coding resources --------------------------*/}
 
+          {/*----------------------- cool art --------------------------*/}
           <div className="bookmarkCat">
-            <Accordion>
+            <Accordion className="accordion01">
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
@@ -102,8 +111,10 @@ export default function IndexPage() {
               >
                 <h3>Cool art</h3>
               </AccordionSummary>
+
               <AccordionDetails>
-                <Accordion>
+                <Accordion className="accordion02">
+                  {/*----------------------- background --------------------------*/}
                   <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
@@ -185,50 +196,105 @@ export default function IndexPage() {
                           tweetLink="https://twitter.com/jtuffdesigns/status/1481361114571153408?s=20"
                         />
                       </Grid>
+                      <Grid item xl={3} sm={3}>
+                        <Cardtemplate
+                          bgImgURL="https://pbs.twimg.com/media/FHEWkKdXwAEJDFA?format=jpg&name=medium"
+                          srcImage="https://pbs.twimg.com/profile_images/1467905105756311564/TtWy-c9b_400x400.jpg"
+                          title="winter castle"
+                          description="by @maxinevee. so pretty"
+                          tweetLink="https://twitter.com/maxinevee/status/1472983447320805387?s=20"
+                        />
+                      </Grid>
                     </Grid>
                   </AccordionDetails>
                 </Accordion>
-                <h4>Characters</h4>
-                <Grid container spacing={5}>
-                  <Grid item xl={3} sm={3}>
-                    <Cardtemplate
-                      bgImgURL="https://pbs.twimg.com/media/FIiuArkVIAAU6k4?format=jpg&name=large"
-                      srcImage="https://pbs.twimg.com/profile_images/1443317526788644865/-yz95icp_400x400.jpg"
-                      title="Self portrait by @friedbaens"
-                      description="cool art with cool textures by twitter artist"
-                      tweetLink="https://twitter.com/friedbaens/status/1479623812371009537?s=20"
-                    />
-                  </Grid>
-                  <Grid item xl={3} sm={3}></Grid>
-                </Grid>
-
-                <h4>Fan art</h4>
-                <Grid container spacing={5}>
-                  <Grid item xl={3} sm={3}>
-                    <Cardtemplate
-                      bgImgURL="https://pbs.twimg.com/media/FInRl5MacAAWX9o?format=jpg&name=360x360"
-                      srcImage="https://pbs.twimg.com/profile_images/1480175854080921602/BdkXyt1__400x400.jpg"
-                      title="Encanto"
-                      description="Dolores and Mariano being dweebs by @komemerda"
-                      tweetLink="https://twitter.com/komemerda/status/1479944412386172928?s=20"
-                    />
-                  </Grid>
-                  <Grid item xl={3} sm={3}>
-                    <Cardtemplate
-                      bgImgURL="https://pbs.twimg.com/media/FIWGa0sUcAY04JF?format=jpg&name=4096x4096"
-                      srcImage="https://pbs.twimg.com/profile_images/1354315224623378437/nZz6Aw9t_400x400.jpg"
-                      title="Pepa and Felix"
-                      description="adorable fan art of how Pepa could have gotten hear cool sun earrings"
-                      tweetLink="https://twitter.com/kianamaiart/status/1478736079649796096?s=20"
-                    />
-                  </Grid>
-                </Grid>
+                {/*----------------------- end of background --------------------------*/}
+                
+                {/*----------------------- characters --------------------------*/}
+                <Accordion className="accordion02">
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                  >
+                    <h4>Characters</h4>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Grid container spacing={5}>
+                      <Grid item xl={3} sm={3}>
+                        <Cardtemplate
+                          bgImgURL="https://pbs.twimg.com/media/FIiuArkVIAAU6k4?format=jpg&name=large"
+                          srcImage="https://pbs.twimg.com/profile_images/1443317526788644865/-yz95icp_400x400.jpg"
+                          title="Self portrait by @friedbaens"
+                          description="cool art with cool textures by twitter artist"
+                          tweetLink="https://twitter.com/friedbaens/status/1479623812371009537?s=20"
+                        />
+                      </Grid>
+                      <Grid item xl={3} sm={3}>
+                        <Cardtemplate
+                          bgImgURL="https://pbs.twimg.com/media/FI3dPqsUUAAj9ES?format=jpg&name=4096x4096"
+                          srcImage="https://pbs.twimg.com/profile_images/1245509597202272257/IXgpOwBy_400x400.jpg"
+                          title="cute owl friend"
+                          description="someone drew their version of cute owl photo. good ref for char design. from @VanillaCherie"
+                          tweetLink="https://twitter.com/VanillaCherie/status/1481732793952522249?s=20"
+                        />
+                      </Grid>
+                    </Grid>
+                  </AccordionDetails>
+                </Accordion>
+                
+                {/*----------------------- end of characters --------------------------*/}
+                
+                {/*----------------------- fan art --------------------------*/}
+                <Accordion className="accordion02">
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                  >
+                    <h4>Fan art</h4>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Grid container spacing={5}>
+                      <Grid item xl={3} sm={3}>
+                        <Cardtemplate
+                          bgImgURL="https://pbs.twimg.com/media/FInRl5MacAAWX9o?format=jpg&name=360x360"
+                          srcImage="https://pbs.twimg.com/profile_images/1480175854080921602/BdkXyt1__400x400.jpg"
+                          title="Encanto"
+                          description="Dolores and Mariano being dweebs by @komemerda"
+                          tweetLink="https://twitter.com/komemerda/status/1479944412386172928?s=20"
+                        />
+                      </Grid>
+                      <Grid item xl={3} sm={3}>
+                        <Cardtemplate
+                          bgImgURL="https://pbs.twimg.com/media/FIWGa0sUcAY04JF?format=jpg&name=4096x4096"
+                          srcImage="https://pbs.twimg.com/profile_images/1354315224623378437/nZz6Aw9t_400x400.jpg"
+                          title="Pepa and Felix"
+                          description="adorable fan art of how Pepa could have gotten hear cool sun earrings"
+                          tweetLink="https://twitter.com/kianamaiart/status/1478736079649796096?s=20"
+                        />
+                      </Grid>
+                      <Grid item xl={3} sm={3}>
+                        <Cardtemplate
+                          bgImgURL="https://pbs.twimg.com/profile_banners/748126879/1460780039/1500x500"
+                          srcImage="https://pbs.twimg.com/profile_images/1476095506770182145/OfGK7EHz_400x400.jpg"
+                          title="Persephone animation"
+                          description="good ref for process by @heyitsJaki. thumbnail is banner"
+                          tweetLink="https://twitter.com/heyitsJaki/status/1482050036267683842?s=20"
+                        />
+                      </Grid>
+                    </Grid>
+                  </AccordionDetails>
+                </Accordion>
+                {/*----------------------- end of fan art --------------------------*/}
               </AccordionDetails>
             </Accordion>
           </div>
+          {/*----------------------- end of cool art --------------------------*/}
 
+          {/*----------------------- art references--------------------------*/}
           <div className="bookmarkCat">
-            <Accordion>
+            <Accordion className="accordion01">
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
@@ -249,6 +315,9 @@ export default function IndexPage() {
                     />
                   </Grid>
                 </Grid>
+                {/*--------------end of tutorials-------------------- */}
+                
+                {/*--------looks fun to draw------- */}
                 <h4>Looks fun to draw</h4>
                 <Grid container spacing={5}>
                 <Grid item xl={3} sm={3}>
@@ -261,12 +330,14 @@ export default function IndexPage() {
                   />
                 </Grid>
               </Grid>
+              {/**------end of looks fun to draw */}
               </AccordionDetails>
             </Accordion>
           </div>
-
+          {/*----------------------- end of art references--------------------------*/}
+          
           <div className="bookmarkCat">
-            <Accordion>
+            <Accordion className="accordion01">
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
@@ -283,14 +354,24 @@ export default function IndexPage() {
           </div>
 
           <div className="bookmarkCat">
-            <h3>Craft things</h3>
-            <Grid container spacing={5}>
-              <Grid item xl={3} sm={3}></Grid>
-            </Grid>
+            <Accordion className="accordion01">
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <h3>Craft things</h3>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Grid container spacing={5}>
+                  <Grid item xl={3} sm={3}></Grid>
+                </Grid>
+              </AccordionDetails>
+            </Accordion>
           </div>
 
           <div className="bookmarkCat">
-            <Accordion>
+            <Accordion className="accordion01">
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
@@ -354,7 +435,9 @@ export default function IndexPage() {
             </Accordion>
           </div>
         </Container>
+        {/*----------------------- end of Container tag --------------------------*/}
       </section>
+      {/*----------------------- end of Body --------------------------*/}
     </div>
     </main>
   )

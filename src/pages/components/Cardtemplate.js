@@ -29,7 +29,7 @@ export default function Cardtemplate({
   };
 
   return (
-    <Card>
+    <Card className="cardStyle">
       <CardHeader
         avatar={
           <Avatar>
