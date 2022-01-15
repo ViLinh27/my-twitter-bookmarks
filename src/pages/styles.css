@@ -1,9 +1,11 @@
 /*-----Main style-----*/
+body {
+  background-color: beige;
+}
 .App {
   font-family: sans-serif;
   text-align: center;
   margin: 0em;
-  background-color: beige;
 }
 .accordion01 {
   background-color: beige;

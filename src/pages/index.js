@@ -49,7 +49,7 @@ export default function IndexPage() {
 
               <AccordionDetails>
                 <Grid container spacing={5}>
-                  <Grid item xl={3} sm={3}>
+                  <Grid item xl={3} md={4} sm={6}>
                     <Cardtemplate
                       bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
                       srcImage="https://pbs.twimg.com/profile_images/1474033070323896323/OxmVHLRD_400x400.jpg"
@@ -58,7 +58,7 @@ export default function IndexPage() {
                       tweetLink="https://twitter.com/designerSaha/status/1480449836503617540?s=20"
                     />
                   </Grid>
-                  <Grid item xl={3} sm={3}>
+                  <Grid item xl={3} md={4} sm={6}>
                     <Cardtemplate
                       bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
                       srcImage="https://pbs.twimg.com/profile_images/1451917571633025033/COe3aQAb_400x400.jpg"
@@ -67,7 +67,7 @@ export default function IndexPage() {
                       tweetLink="https://twitter.com/swastika0015/status/1478962049170518018?s=20"
                     />
                   </Grid>
-                  <Grid item xl={3} sm={3}>
+                  <Grid item xl={3} md={4} sm={6}>
                     <Cardtemplate
                       bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
                       srcImage="https://pbs.twimg.com/profile_images/1435853099600474117/rjDQ_RSZ_400x400.jpg"
@@ -76,7 +76,7 @@ export default function IndexPage() {
                       tweetLink="https://twitter.com/mdjunaidap/status/1473871417867333634?s=20"
                     />
                   </Grid>
-                  <Grid item xl={3} sm={3}>
+                  <Grid item xl={3} md={4} sm={6}>
                     <Cardtemplate
                       bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
                       srcImage="https://pbs.twimg.com/profile_images/1471847814422568965/zQG2Lrkv_400x400.jpg"
@@ -85,13 +85,67 @@ export default function IndexPage() {
                       tweetLink="https://twitter.com/saviomartin7/status/1472808997820383234?s=20"
                     />
                   </Grid>
-                  <Grid item xl={3} sm={3}>
+                  <Grid item xl={3} md={4} sm={6}>
                     <Cardtemplate
                       bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
                       srcImage="https://pbs.twimg.com/profile_images/1476905990855475205/VskPkdVv_400x400.png"
                       title="front end roadmap/resources i guess"
                       description="by @VittoStack"
                       tweetLink="https://twitter.com/VittoStack/status/1481663360932397058?s=20"
+                    />
+                  </Grid>
+                  <Grid item xl={3} md={4} sm={6}>
+                    <Cardtemplate
+                      bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
+                      srcImage="https://pbs.twimg.com/profile_images/1470433738509144065/BQWuj37q_400x400.jpg"
+                      title="techincal writing resources thread"
+                      description="from @The_GreatBonnie"
+                      tweetLink="https://twitter.com/The_GreatBonnie/status/1472265694121283594?s=20"
+                    />
+                  </Grid>
+                  <Grid item xl={3} md={4} sm={6}>
+                    <Cardtemplate
+                      bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
+                      srcImage="https://pbs.twimg.com/profile_images/1478684780506095618/hu4F5xbT_400x400.jpg"
+                      title="react focus suggestions"
+                      description="to help study and practice on react and js"
+                      tweetLink="https://twitter.com/SergiiKirianov/status/1460536412638429189?s=20"
+                    />
+                  </Grid>
+                   <Grid item xl={3} md={4} sm={6}>
+                    <Cardtemplate
+                      bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
+                      srcImage="https://pbs.twimg.com/profile_images/1471847814422568965/zQG2Lrkv_400x400.jpg"
+                      title="some front end resources"
+                      description="by @saviomartin7"
+                      tweetLink="https://twitter.com/saviomartin7/status/1460179738010468355?s=20"
+                    />
+                  </Grid>
+                   <Grid item xl={3} md={4} sm={6}>
+                    <Cardtemplate
+                      bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
+                      srcImage="https://pbs.twimg.com/profile_images/1435318001478389762/We05XU63_400x400.jpg"
+                      title="neat app to look at"
+                      description="by @KassandraSanch. html and css"
+                      tweetLink="https://twitter.com/KassandraSanch/status/1459925798413025288?s=20"
+                    />
+                  </Grid>
+                   <Grid item xl={3} md={4} sm={6}>
+                    <Cardtemplate
+                      bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
+                      srcImage="https://pbs.twimg.com/profile_images/1454861068233228289/6sn9BYOf_400x400.jpg"
+                      title="different ways to sell html templates"
+                      description="will have to learn to make these first"
+                      tweetLink="https://twitter.com/csaba_kissi/status/1460144689521250304?s=20"
+                    />
+                  </Grid>
+                   <Grid item xl={3} md={4} sm={6}>
+                    <Cardtemplate
+                      bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
+                      srcImage="https://pbs.twimg.com/profile_images/1455707950341890051/flRfKMOq_400x400.jpg"
+                      title="roadmap for web dev"
+                      description="useful to look at when planning"
+                      tweetLink="https://twitter.com/nachoiacovino/status/1459966797831102468?s=20"
                     />
                   </Grid>
                 </Grid>
@@ -124,7 +178,7 @@ export default function IndexPage() {
                   </AccordionSummary>
                   <AccordionDetails>
                     <Grid container spacing={5}>
-                      <Grid item xl={3} sm={3}>
+                      <Grid item xl={3} md={4} sm={6}>
                         <Cardtemplate
                           bgImgURL="https://pbs.twimg.com/media/FIa1FSpXIAcaOSw?format=jpg&name=large"
                           srcImage="https://pbs.twimg.com/profile_images/1345650468509331456/PBymlVbc_400x400.png"
@@ -133,7 +187,7 @@ export default function IndexPage() {
                           tweetLink="https://twitter.com/ani_obsessive/status/1479068915586191360?s=20"
                         />
                       </Grid>
-                      <Grid item xl={3} sm={3}>
+                      <Grid item xl={3} md={4} sm={6}>
                         <Cardtemplate
                           bgImgURL="https://pbs.twimg.com/media/FIUbF7wVcAAvcVr?format=jpg&name=4096x4096"
                           srcImage="https://pbs.twimg.com/profile_images/1090888684973355013/g1TQnuLP_400x400.jpg"
@@ -142,7 +196,7 @@ export default function IndexPage() {
                           tweetLink="https://twitter.com/glendalesidiot/status/1478618432564125697?s=20"
                         />
                       </Grid>
-                      <Grid item xl={3} sm={3}>
+                      <Grid item xl={3} md={4} sm={6}>
                         <Cardtemplate
                           bgImgURL="https://pbs.twimg.com/media/FH-UhiEVkAAuZjp?format=jpg&name=medium"
                           srcImage="https://pbs.twimg.com/profile_images/1105971791309111297/UlOjsM-a_400x400.png"
@@ -151,7 +205,7 @@ export default function IndexPage() {
                           tweetLink="https://twitter.com/nkim_illustrate/status/1477062508229783556?s=20"
                         />
                       </Grid>
-                      <Grid item xl={3} sm={3}>
+                      <Grid item xl={3} md={4} sm={6}>
                         <Cardtemplate
                           bgImgURL="https://pbs.twimg.com/media/FIQlzlAX0AIYPAE?format=jpg&name=large"
                           srcImage="https://pbs.twimg.com/profile_images/1345650468509331456/PBymlVbc_400x400.png"
@@ -160,7 +214,7 @@ export default function IndexPage() {
                           tweetLink="https://twitter.com/ani_obsessive/status/1478348251518709769?s=20"
                         />
                       </Grid>
-                      <Grid item xl={3} sm={3}>
+                      <Grid item xl={3} md={4} sm={6}>
                         <Cardtemplate
                           bgImgURL="https://pbs.twimg.com/media/FIRfXwpWQAUNb9j?format=jpg&name=4096x4096"
                           srcImage="https://pbs.twimg.com/profile_images/1341260101332725761/sMzt-U_z_400x400.jpg"
@@ -169,7 +223,7 @@ export default function IndexPage() {
                           tweetLink="https://twitter.com/Thepotenpro/status/1478417470428000258?s=20"
                         />
                       </Grid>
-                      <Grid item xl={3} sm={3}>
+                      <Grid item xl={3} md={4} sm={6}>
                         <Cardtemplate
                           bgImgURL="https://pbs.twimg.com/media/FJAM2jXUYAEExO0?format=jpg&name=large"
                           srcImage="https://pbs.twimg.com/profile_images/1455479183346257924/wRoBZk2U_400x400.jpg"
@@ -178,7 +232,7 @@ export default function IndexPage() {
                           tweetLink="https://twitter.com/crimsolynn/status/1481698410939904000?s=20"
                         />
                       </Grid>
-                      <Grid item xl={3} sm={3}>
+                      <Grid item xl={3} md={4} sm={6}>
                         <Cardtemplate
                         bgImgURL="https://pbs.twimg.com/media/FI9WsgAVgAQSrhk?format=jpg&name=large"
                         srcImage="https://pbs.twimg.com/profile_images/1364019383354290178/5-mHH45K_400x400.jpg"
@@ -187,7 +241,7 @@ export default function IndexPage() {
                         tweetLink="https://twitter.com/Tina_Draws/status/1481498133288734722?s=20"
                         />
                       </Grid>
-                      <Grid item xl={3} sm={3}>
+                      <Grid item xl={3} md={4} sm={6}>
                         <Cardtemplate
                           bgImgURL="https://pbs.twimg.com/media/FI7Y4ydX0A41V0j?format=jpg&name=large"
                           srcImage="https://pbs.twimg.com/profile_images/1379782101168496642/e-ah_NV7_400x400.jpg"
@@ -196,7 +250,7 @@ export default function IndexPage() {
                           tweetLink="https://twitter.com/jtuffdesigns/status/1481361114571153408?s=20"
                         />
                       </Grid>
-                      <Grid item xl={3} sm={3}>
+                      <Grid item xl={3} md={4} sm={6}>
                         <Cardtemplate
                           bgImgURL="https://pbs.twimg.com/media/FHEWkKdXwAEJDFA?format=jpg&name=medium"
                           srcImage="https://pbs.twimg.com/profile_images/1467905105756311564/TtWy-c9b_400x400.jpg"
@@ -221,7 +275,7 @@ export default function IndexPage() {
                   </AccordionSummary>
                   <AccordionDetails>
                     <Grid container spacing={5}>
-                      <Grid item xl={3} sm={3}>
+                      <Grid item xl={3} md={4} sm={6}>
                         <Cardtemplate
                           bgImgURL="https://pbs.twimg.com/media/FIiuArkVIAAU6k4?format=jpg&name=large"
                           srcImage="https://pbs.twimg.com/profile_images/1443317526788644865/-yz95icp_400x400.jpg"
@@ -230,13 +284,22 @@ export default function IndexPage() {
                           tweetLink="https://twitter.com/friedbaens/status/1479623812371009537?s=20"
                         />
                       </Grid>
-                      <Grid item xl={3} sm={3}>
+                      <Grid item xl={3} md={4} sm={6}>
                         <Cardtemplate
                           bgImgURL="https://pbs.twimg.com/media/FI3dPqsUUAAj9ES?format=jpg&name=4096x4096"
                           srcImage="https://pbs.twimg.com/profile_images/1245509597202272257/IXgpOwBy_400x400.jpg"
                           title="cute owl friend"
                           description="someone drew their version of cute owl photo. good ref for char design. from @VanillaCherie"
                           tweetLink="https://twitter.com/VanillaCherie/status/1481732793952522249?s=20"
+                        />
+                      </Grid>
+                      <Grid item xl={3} md={4} sm={6}>
+                        <Cardtemplate
+                          bgImgURL="https://pbs.twimg.com/media/FG5ba0OWUAUAR41?format=jpg&name=large"
+                          srcImage="https://pbs.twimg.com/profile_images/1366547812285100039/SF9OcQ1U_400x400.jpg"
+                          title="cool lady painting"
+                          description="by @likelihood_art on twitter. I think char's name is Aj"
+                          tweetLink="https://twitter.com/likelihood_art/status/1472214649412149252?s=20"
                         />
                       </Grid>
                     </Grid>
@@ -256,7 +319,7 @@ export default function IndexPage() {
                   </AccordionSummary>
                   <AccordionDetails>
                     <Grid container spacing={5}>
-                      <Grid item xl={3} sm={3}>
+                      <Grid item xl={3} md={4} sm={6}>
                         <Cardtemplate
                           bgImgURL="https://pbs.twimg.com/media/FInRl5MacAAWX9o?format=jpg&name=360x360"
                           srcImage="https://pbs.twimg.com/profile_images/1480175854080921602/BdkXyt1__400x400.jpg"
@@ -265,7 +328,7 @@ export default function IndexPage() {
                           tweetLink="https://twitter.com/komemerda/status/1479944412386172928?s=20"
                         />
                       </Grid>
-                      <Grid item xl={3} sm={3}>
+                      <Grid item xl={3} md={4} sm={6}>
                         <Cardtemplate
                           bgImgURL="https://pbs.twimg.com/media/FIWGa0sUcAY04JF?format=jpg&name=4096x4096"
                           srcImage="https://pbs.twimg.com/profile_images/1354315224623378437/nZz6Aw9t_400x400.jpg"
@@ -274,7 +337,7 @@ export default function IndexPage() {
                           tweetLink="https://twitter.com/kianamaiart/status/1478736079649796096?s=20"
                         />
                       </Grid>
-                      <Grid item xl={3} sm={3}>
+                      <Grid item xl={3} md={4} sm={6}>
                         <Cardtemplate
                           bgImgURL="https://pbs.twimg.com/profile_banners/748126879/1460780039/1500x500"
                           srcImage="https://pbs.twimg.com/profile_images/1476095506770182145/OfGK7EHz_400x400.jpg"
@@ -303,33 +366,53 @@ export default function IndexPage() {
                 <h3>Art references</h3>
               </AccordionSummary>
                 <AccordionDetails>
-                  <h4>Tutorials</h4>
-                <Grid container spacing={5}>
-                  <Grid item xl={3} sm={3}>
-                    <Cardtemplate
-                      bgImgURL="https://pbs.twimg.com/media/FIajes2XIAcz8l3?format=jpg&name=900x900"
-                      srcImage="https://pbs.twimg.com/profile_images/1759638070/Picture_4_400x400.png"
-                      title="Wings tutorial"
-                      description="by @EtheringtonBros on twitter"
-                      tweetLink="https://twitter.com/EtheringtonBros/status/1479049652729225224?s=20"
-                    />
-                  </Grid>
-                </Grid>
+                  <Accordion className="accordion02">
+                    <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                    >
+                      <h4>Tutorials</h4>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <Grid container spacing={5}>
+                        <Grid item xl={3} md={4} sm={6}>
+                          <Cardtemplate
+                            bgImgURL="https://pbs.twimg.com/media/FIajes2XIAcz8l3?format=jpg&name=900x900"
+                            srcImage="https://pbs.twimg.com/profile_images/1759638070/Picture_4_400x400.png"
+                            title="Wings tutorial"
+                            description="by @EtheringtonBros on twitter"
+                            tweetLink="https://twitter.com/EtheringtonBros/status/1479049652729225224?s=20"
+                          />
+                        </Grid>
+                      </Grid>
+                    </AccordionDetails>
+                  </Accordion>
                 {/*--------------end of tutorials-------------------- */}
                 
                 {/*--------looks fun to draw------- */}
-                <h4>Looks fun to draw</h4>
-                <Grid container spacing={5}>
-                <Grid item xl={3} sm={3}>
-                  <Cardtemplate
-                    bgImgURL="https://pbs.twimg.com/media/FIEV535XoAIQjzZ?format=jpg&name=large"
-                    srcImage="https://pbs.twimg.com/profile_images/1351792019354611712/kkprLZfI_400x400.jpg"
-                    title="Some lady's pretty new year outfit"
-                    description="Looked fun to draw"
-                    tweetLink="https://twitter.com/tharmeega/status/1477486243848105986?s=20"
-                  />
-                </Grid>
-              </Grid>
+                 <Accordion className="accordion02">
+                    <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                    >
+                      <h4>Looks fun to draw</h4>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <Grid container spacing={5}>
+                        <Grid item xl={3} md={4} sm={6}>
+                          <Cardtemplate
+                            bgImgURL="https://pbs.twimg.com/media/FIEV535XoAIQjzZ?format=jpg&name=large"
+                            srcImage="https://pbs.twimg.com/profile_images/1351792019354611712/kkprLZfI_400x400.jpg"
+                            title="Some lady's pretty new year outfit"
+                            description="Looked fun to draw"
+                            tweetLink="https://twitter.com/tharmeega/status/1477486243848105986?s=20"
+                          />
+                        </Grid>
+                      </Grid>
+                    </AccordionDetails>
+                  </Accordion>
               {/**------end of looks fun to draw */}
               </AccordionDetails>
             </Accordion>
@@ -347,7 +430,7 @@ export default function IndexPage() {
               </AccordionSummary>
               <AccordionDetails>
                   <Grid container spacing={5}>
-                    <Grid item xl={3} sm={3}></Grid>
+                    <Grid item xl={3} md={4} sm={6}></Grid>
                   </Grid>
               </AccordionDetails>
             </Accordion>
@@ -364,7 +447,7 @@ export default function IndexPage() {
               </AccordionSummary>
               <AccordionDetails>
                 <Grid container spacing={5}>
-                  <Grid item xl={3} sm={3}></Grid>
+                  <Grid item xl={3} md={4} sm={6}></Grid>
                 </Grid>
               </AccordionDetails>
             </Accordion>
@@ -381,7 +464,7 @@ export default function IndexPage() {
               </AccordionSummary>
               <AccordionDetails>
                 <Grid container spacing={5}>
-                  <Grid item xl={3} sm={3}>
+                  <Grid item xl={3} md={4} sm={6}>
                     <Cardtemplate
                         bgImgURL="https://pbs.twimg.com/media/FDeZFHBVkAQ1oDX?format=jpg&name=large"
                         srcImage="https://pbs.twimg.com/profile_images/1280865685460172800/c5ieI0WI_400x400.jpg"
@@ -391,7 +474,7 @@ export default function IndexPage() {
                       />
                   </Grid>
 
-                  <Grid item xl={3} sm={3}>
+                  <Grid item xl={3} md={4} sm={6}>
                     <Cardtemplate
                         bgImgURL="https://pbs.twimg.com/media/FDooXkeVEAU_Ypm?format=jpg&name=large"
                         srcImage="https://pbs.twimg.com/profile_images/1280865685460172800/c5ieI0WI_400x400.jpg"
@@ -401,7 +484,7 @@ export default function IndexPage() {
                       />
                   </Grid>
 
-                  <Grid item xl={3} sm={3}>
+                  <Grid item xl={3} md={4} sm={6}>
                     <Cardtemplate
                         bgImgURL="https://pbs.twimg.com/media/FHEzd-iVIAA2cwb?format=jpg&name=large"
                         srcImage="https://pbs.twimg.com/profile_images/1280865685460172800/c5ieI0WI_400x400.jpg"
@@ -411,7 +494,7 @@ export default function IndexPage() {
                       />
                   </Grid>
 
-                  <Grid item xl={3} sm={3}>
+                  <Grid item xl={3} md={4} sm={6}>
                     <Cardtemplate
                         bgImgURL="https://pbs.twimg.com/media/FHoe2c1VcAEdt8k?format=jpg&name=large"
                         srcImage="https://pbs.twimg.com/profile_images/1280865685460172800/c5ieI0WI_400x400.jpg"
@@ -421,13 +504,23 @@ export default function IndexPage() {
                       />
                   </Grid>
 
-                  <Grid item xl={3} sm={3}>
+                  <Grid item xl={3} md={4} sm={6}>
                     <Cardtemplate
                       bgImgURL="https://pbs.twimg.com/media/FIRZ9EPVgAEVj3k?format=jpg&name=large"
                       srcImage="https://pbs.twimg.com/profile_images/1383118033036673031/s-5TFCqi_400x400.jpg"
                       title="Celeste and Brooster"
                       description="from @aresangel on twitter"
                       tweetLink="https://twitter.com/aresangel/status/1478405485053108226?s=20"
+                    />
+                  </Grid>
+
+                  <Grid xl={3} md={4} sm={6}>
+                    <Cardtemplate
+                      bgImgURL="https://pbs.twimg.com/media/FELpU-aXoAMxQar?format=jpg&name=large"
+                      srcImage="https://pbs.twimg.com/profile_images/1468288405381521413/o_Ra6LBX_400x400.jpg"
+                      title="italian countryside inspired"
+                      description="by @avasgardens"
+                      tweetLink="https://twitter.com/avasgardens/status/1459985780550651905?s=20"
                     />
                   </Grid>
                 </Grid>
