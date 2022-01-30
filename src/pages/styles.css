@@ -1,15 +1,31 @@
+/*-----Main style-----*/
+body {
+  background-color: beige;
+}
 .App {
   font-family: sans-serif;
   text-align: center;
   margin: 0em;
+}
+.accordion01 {
   background-color: beige;
 }
+.accordion02 {
+  background-color: burlywood;
+}
+/*------end of main stylel-----*/
 
+/*---twitter card--*/
 .bookmarkCat {
   background-color: burlywood;
   padding: 2em;
 }
 
+.cardStyle {
+  background-color: blanchedalmond;
+}
+
 .pfp {
   width: 100%;
 }
+/*-------end of twitter card----*/
