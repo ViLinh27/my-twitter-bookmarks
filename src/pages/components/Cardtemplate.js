@@ -48,9 +48,9 @@ export default function Cardtemplate({
         <Typography>{description}</Typography>
 
         <CardActions>
-          <IconButton>
+          {/* <IconButton>
             <ShareIcon />
-          </IconButton>
+          </IconButton> */}
           <Typography paragraph>
             <Link to={tweetLink}>Go to tweet</Link>
           </Typography>
