@@ -99,6 +99,35 @@ export default function IndexPage() {
                         />
                       </Grid>
                        */}
+                        <Grid item xl={3} md={4} sm={6}>
+                          <Cardtemplate
+                            bgImgURL="https://pbs.twimg.com/profile_banners/1668100142/1423791803/1500x500"
+                            srcImage="https://pbs.twimg.com/profile_images/1276770212927410176/qTgTIejk_400x400.jpg"
+                            title="Build react code editor that compiles and excutes in 40+ languages"
+                            description="tutorial that helps practice your react skills. Good project idea."
+                            tweetLink="https://twitter.com/freeCodeCamp/status/1546449473722880001?s=20&t=X8r22pVcn1TxWPtOUt-CMg"
+                          />
+                        </Grid>
+
+                        <Grid item xl={3} md={4} sm={6}>
+                          <Cardtemplate
+                            bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
+                            srcImage="https://pbs.twimg.com/profile_images/1435853099600474117/rjDQ_RSZ_400x400.jpg"
+                            title="project ideas"
+                            description="some free html/css projects from Mohammed Junaid"
+                            tweetLink="https://twitter.com/mdjunaidap/status/1473871417867333634?s=20"
+                          />
+                        </Grid>
+
+                        <Grid item xl={3} md={4} sm={6}>
+                          <Cardtemplate
+                            bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
+                            srcImage="https://pbs.twimg.com/profile_images/1435318001478389762/We05XU63_400x400.jpg"
+                            title="neat app to look at"
+                            description="by @KassandraSanch. html and css"
+                            tweetLink="https://twitter.com/KassandraSanch/status/1459925798413025288?s=20"
+                          />
+                        </Grid>
                       </Grid>
                   </AccordionDetails>
                 </Accordion>
@@ -150,15 +179,6 @@ export default function IndexPage() {
                         />
                       </Grid>
                    */}
-                  <Grid item xl={3} md={4} sm={6}>
-                    <Cardtemplate
-                      bgImgURL="https://pbs.twimg.com/profile_banners/1668100142/1423791803/1500x500"
-                      srcImage="https://pbs.twimg.com/profile_images/1276770212927410176/qTgTIejk_400x400.jpg"
-                      title="Build react code editor that compiles and excutes in 40+ languages"
-                      description="tutorial that helps practice your react skills. Good project idea."
-                      tweetLink="https://twitter.com/freeCodeCamp/status/1546449473722880001?s=20&t=X8r22pVcn1TxWPtOUt-CMg"
-                    />
-                  </Grid>
 
                   <Grid item xl={3} md={4} sm={6}>
                     <Cardtemplate
@@ -215,15 +235,7 @@ export default function IndexPage() {
                       tweetLink="https://twitter.com/swastika0015/status/1478962049170518018?s=20"
                     />
                   </Grid>
-                  <Grid item xl={3} md={4} sm={6}>
-                    <Cardtemplate
-                      bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
-                      srcImage="https://pbs.twimg.com/profile_images/1435853099600474117/rjDQ_RSZ_400x400.jpg"
-                      title="project ideas"
-                      description="some free html/css projects from Mohammed Junaid"
-                      tweetLink="https://twitter.com/mdjunaidap/status/1473871417867333634?s=20"
-                    />
-                  </Grid>
+                  
                   <Grid item xl={3} md={4} sm={6}>
                     <Cardtemplate
                       bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
@@ -269,15 +281,7 @@ export default function IndexPage() {
                       tweetLink="https://twitter.com/saviomartin7/status/1460179738010468355?s=20"
                     />
                   </Grid>
-                   <Grid item xl={3} md={4} sm={6}>
-                    <Cardtemplate
-                      bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
-                      srcImage="https://pbs.twimg.com/profile_images/1435318001478389762/We05XU63_400x400.jpg"
-                      title="neat app to look at"
-                      description="by @KassandraSanch. html and css"
-                      tweetLink="https://twitter.com/KassandraSanch/status/1459925798413025288?s=20"
-                    />
-                  </Grid>
+                   
                    <Grid item xl={3} md={4} sm={6}>
                     <Cardtemplate
                       bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
@@ -315,6 +319,44 @@ export default function IndexPage() {
               </AccordionSummary>
 
               <AccordionDetails>
+
+                {/*design */}
+                <Accordion className="accordion02">
+                   <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                  >
+                    <h4>Design</h4>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Grid container spacing={5}>
+                       {/*
+                          <Grid item xl={3} md={4} sm={6}>
+                        <Cardtemplate
+                          bgImgURL=""
+                          srcImage=""
+                          title=""
+                          description=""
+                          tweetLink=""
+                        />
+                      </Grid>
+                        */}
+                      <Grid item xl={3} md={4} sm={6}>
+                        <Cardtemplate
+                          bgImgURL="https://pbs.twimg.com/media/FVJ7T56XwAEJSIQ?format=jpg&name=large"
+                          srcImage="https://pbs.twimg.com/profile_images/1518033995723857924/yTMY1pJs_400x400.jpg"
+                          title="cornflower blue wren by nepeteaa"
+                          description="cool bird design. would look cool on a shirt"
+                          tweetLink="https://twitter.com/nepeteaa/status/1536426007862951939?s=20&t=NrOtJI3xykXon934WLhAog"
+                        />
+                      </Grid>
+
+                    </Grid>
+                  </AccordionDetails>
+                </Accordion>
+                {/*---end of design--*/}
+
                 <Accordion className="accordion02">
                   {/*----------------------- background --------------------------*/}
                   <AccordionSummary
@@ -470,7 +512,7 @@ export default function IndexPage() {
                       
                     </Grid>
                   </AccordionDetails>
-                </Accordion>
+              </Accordion>
                 {/*----------------------- end of background --------------------------*/}
                 
                 {/*----------------------- characters --------------------------*/}
@@ -495,6 +537,76 @@ export default function IndexPage() {
                         />
                       </Grid>
                         */}
+                        <Grid item xl={3} md={4} sm={6}>
+                          <Cardtemplate
+                            bgImgURL="https://pbs.twimg.com/media/FVsj559UAAElWot?format=jpg&name=medium"
+                            srcImage="https://pbs.twimg.com/profile_images/682410655652163584/KcvExo0-_400x400.jpg"
+                            title="cool comic by tenyais"
+                            description="combo of comic pages. characters are Douxie and Zoe. good ref from story artist at disney"
+                            tweetLink="https://twitter.com/tenyais/status/1538863181396729858?s=20&t=NrOtJI3xykXon934WLhAog"
+                          />
+                        </Grid>
+
+                        <Grid item xl={3} md={4} sm={6}>
+                          <Cardtemplate
+                            bgImgURL="https://pbs.twimg.com/media/FVzmchyXsAAqeap?format=jpg&name=4096x4096"
+                            srcImage="https://pbs.twimg.com/profile_images/1458173193034797059/pZdg-Viy_400x400.jpg"
+                            title="pride comic by marinscos"
+                            description="Mari Costa comic from 2018 thread."
+                            tweetLink="https://twitter.com/marinscos/status/1539359216829444096?s=20&t=NrOtJI3xykXon934WLhAog"
+                          />
+                        </Grid>
+
+                        <Grid item xl={3} md={4} sm={6}>
+                          <Cardtemplate
+                            bgImgURL="https://pbs.twimg.com/media/FWHQpcjUEAAsTRS?format=jpg&name=large"
+                            srcImage="https://pbs.twimg.com/profile_images/1460381553943629830/-HnlS9Pf_400x400.jpg"
+                            title="cartoon characters and pride flags by l_issv"
+                            description="features bi, trans, unlabelled and lesbian flags. very cute."
+                            tweetLink="https://twitter.com/l_issv/status/1540741967071662082?s=20&t=NrOtJI3xykXon934WLhAog"
+                          />
+                        </Grid>
+
+                        <Grid item xl={3} md={4} sm={6}>
+                          <Cardtemplate
+                            bgImgURL="https://pbs.twimg.com/media/FWiu3exUIAE4_eF?format=jpg&name=large"
+                            srcImage="https://pbs.twimg.com/profile_images/1539441847960862720/NRA7OPYS_400x400.jpg"
+                            title="like moth to a flame by DelaneyJanuzzi"
+                            description="cool painting. awesome lineless art"
+                            tweetLink="https://twitter.com/DelaneyJanuzzi/status/1542675206786801665?s=20&t=NrOtJI3xykXon934WLhAog"
+                          />
+                        </Grid>
+
+                        <Grid item xl={3} md={4} sm={6}>
+                          <Cardtemplate
+                            bgImgURL="https://pbs.twimg.com/media/FW8uCZOVUAEyyGN?format=jpg&name=4096x4096"
+                            srcImage="https://pbs.twimg.com/profile_images/1513638738064461828/htfkWpVe_400x400.jpg"
+                            title="magazine cover for animation by meganroseruiz"
+                            description="also a cereal box for a gig for illumination."
+                            tweetLink="https://twitter.com/meganroseruiz/status/1544504225673097217?s=20&t=NrOtJI3xykXon934WLhAog"
+                          />
+                        </Grid>
+
+                        <Grid item xl={3} md={4} sm={6}>
+                          <Cardtemplate
+                            bgImgURL="https://pbs.twimg.com/media/FWsatmfX0AMKxhG?format=jpg&name=4096x4096"
+                            srcImage="https://pbs.twimg.com/profile_images/1518611015696633856/b71nhlNV_400x400.jpg"
+                            title="koi the blue oni by suizilla on twitter"
+                            description="not sure if fan art, but cool looking anime girl"
+                            tweetLink="https://twitter.com/suizilla/status/1543356838405611520?s=20&t=NrOtJI3xykXon934WLhAog"
+                          />
+                        </Grid>
+
+                        <Grid item xl={3} md={4} sm={6}>
+                          <Cardtemplate
+                            bgImgURL="https://pbs.twimg.com/media/FW1cATWUUAAh_3b?format=jpg&name=large"
+                            srcImage="https://pbs.twimg.com/profile_images/1539441847960862720/NRA7OPYS_400x400.jpg"
+                            title="thematic contrast DelaneyJanuzzi on twitter"
+                            description="cool paintings on contrast. Super cool looking"
+                            tweetLink="https://twitter.com/DelaneyJanuzzi/status/1543991763978711040?s=20&t=NrOtJI3xykXon934WLhAog"
+                          />
+                        </Grid>
+                        
                        <Grid item xl={3} md={4} sm={6}>
                         <Cardtemplate
                           bgImgURL="https://pbs.twimg.com/media/FXUv3iOWAAEqX8s?format=jpg&name=large"
@@ -598,6 +710,16 @@ export default function IndexPage() {
                         />
                       </Grid>
                          */}
+                      <Grid item xl={3} md={4} sm={6}>
+                        <Cardtemplate
+                          bgImgURL="https://pbs.twimg.com/media/FWo4JH2UYAA-RPv?format=jpg&name=4096x4096"
+                          srcImage="https://pbs.twimg.com/profile_images/1513638738064461828/htfkWpVe_400x400.jpg"
+                          title="a pokemon video by meganroseruiz"
+                          description="dont know the pokemon but cute fan art"
+                          tweetLink="https://twitter.com/meganroseruiz/status/1543438808972025856?s=20&t=NrOtJI3xykXon934WLhAog"
+                        />
+                      </Grid>
+                      
                       <Grid item xl={3} md={4} sm={6}>
                         <Cardtemplate
                           bgImgURL="https://pbs.twimg.com/media/FXXnTJvWQAAhe4t?format=jpg&name=medium"
@@ -789,6 +911,7 @@ export default function IndexPage() {
           </div>
           {/*----------------------- end of art references--------------------------*/}
           
+          {/*--------i want to buy------------- */}
           <div className="bookmarkCat">
             <Accordion className="accordion01">
               <AccordionSummary
@@ -811,7 +934,16 @@ export default function IndexPage() {
                         />
                       </Grid>
                             */}
-                    <Grid item xl={3} md={4} sm={6}></Grid>
+                    <Grid item xl={3} md={4} sm={6}>
+                        <Cardtemplate
+                          bgImgURL="https://pbs.twimg.com/media/FVKUhkPWIAcVSuw?format=jpg&name=4096x4096"
+                          srcImage="https://pbs.twimg.com/profile_images/1398799214864437249/Ejn2QTKG_400x400.jpg"
+                          title="ocean themed looks from mg3kiryu"
+                          description="artist makes cute ocean merch like patches. cool fashion"
+                          tweetLink="https://twitter.com/mg3kiryu/status/1536453899628027904?s=20&t=NrOtJI3xykXon934WLhAog"
+                        />
+                    </Grid>
+
                   </Grid>
               </AccordionDetails>
             </Accordion>
