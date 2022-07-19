@@ -51,6 +51,33 @@ export default function IndexPage() {
                 <Grid container spacing={5}>
                   <Grid item xl={3} md={4} sm={6}>
                     <Cardtemplate
+                      bgImgURL="https://pbs.twimg.com/media/FXtti1fUIAMwDH_?format=jpg&name=small"
+                      srcImage="https://pbs.twimg.com/profile_images/1542520452999815169/mHs_cQZj_400x400.jpg"
+                      title="what is http?"
+                      desc="explains http in comic form. by rapidAPI"
+                      tweetLink="https://twitter.com/Rapid_API/status/1547951386750361603?s=20&t=_uAP96mj810AzmSbfd2xZQ"
+                    />
+                  </Grid>
+                  <Grid item xl={3} md={4} sm={6}>
+                    <Cardtemplate
+                      bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
+                      srcImage="https://pbs.twimg.com/profile_images/1276770212927410176/qTgTIejk_400x400.jpg"
+                      title="automate your life with python"
+                      description="automating different tasks with python"
+                      tweetLink="https://twitter.com/freeCodeCamp/status/1549062072469753856?s=20&t=_uAP96mj810AzmSbfd2xZQ"
+                    />
+                  </Grid>
+                  <Grid item xl={3} md={4} sm={6}>
+                    <Cardtemplate
+                      bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
+                      srcImage="https://pbs.twimg.com/profile_images/1276770212927410176/qTgTIejk_400x400.jpg"
+                      title="guide to REST APIs in react"
+                      description="noob proof allegedly"
+                      tweetLink="https://twitter.com/freeCodeCamp/status/1549046730733170688?s=20&t=_uAP96mj810AzmSbfd2xZQ"
+                    />
+                  </Grid>
+                  <Grid item xl={3} md={4} sm={6}>
+                    <Cardtemplate
                       bgImgURL="https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500"
                       srcImage="https://pbs.twimg.com/profile_images/1474033070323896323/OxmVHLRD_400x400.jpg"
                       title="Free web design e-books"
@@ -259,6 +286,24 @@ export default function IndexPage() {
                           tweetLink="https://twitter.com/maxinevee/status/1472983447320805387?s=20"
                         />
                       </Grid>
+                      <Grid item xl={3} md={4} sm={6}>
+                        <Cardtemplate
+                          bgImgURL="https://pbs.twimg.com/media/FXfCQlOX0Ac2viq?format=jpg&name=4096x4096"
+                          srcImage="https://pbs.twimg.com/profile_images/1546962750907318274/RBGUjj-Y_400x400.jpg"
+                          title="portfolio of cool bg artist"
+                          description="cool bg from ajadeite on twitter. Beatiful style for bg work"
+                          tweetLink="https://twitter.com/ajadeite/status/1546957959032340482?s=20&t=_uAP96mj810AzmSbfd2xZQ"
+                        />
+                      </Grid>
+                      <Grid item xl={3} md={4} sm={6}>
+                        <Cardtemplate
+                        />
+                      </Grid>
+                      <Grid item xl={3} md={4} sm={6}>
+                        <Cardtemplate
+                        />
+                      </Grid>
+                      
                     </Grid>
                   </AccordionDetails>
                 </Accordion>
@@ -302,6 +347,34 @@ export default function IndexPage() {
                           tweetLink="https://twitter.com/likelihood_art/status/1472214649412149252?s=20"
                         />
                       </Grid>
+                      <Grid item xl={3} md={4} sm={6}>
+                        <Cardtemplate
+                          bgImgURL="https://pbs.twimg.com/media/FX6GEhwXkAASq_c?format=jpg&name=large"
+                          srcImage="https://pbs.twimg.com/profile_images/1535476791904706560/5B9oXXJx_400x400.jpg"
+                          title="Our Flag meets death duo"
+                          description="The two main dorks being dorks."
+                          tweetLink="https://twitter.com/awwlba/status/1548822740144209920?s=20&t=_uAP96mj810AzmSbfd2xZQ"
+                        />
+                      </Grid>
+                       <Grid item xl={3} md={4} sm={6}>
+                        <Cardtemplate
+                        bgImgURL="https://pbs.twimg.com/media/FXueLyVUsAU_V8h?format=jpg&name=large"
+                        srcImage="https://pbs.twimg.com/profile_images/1268776739360002050/pg9-UMBT_400x400.jpg"
+                        title="chinese wedding painting"
+                        description="30 minute painting  by minjue helen chen"
+                        tweetLink="https://twitter.com/MingjueChen/status/1548004824943185920?s=20&t=_uAP96mj810AzmSbfd2xZQ"
+                        />
+                      </Grid>
+                      <Grid item xl={3} md={4} sm={6}>
+                        <Cardtemplate
+                          bgImgURL="https://pbs.twimg.com/media/FXvDVE4VsAImU8M?format=png&name=900x900"
+                          srcImage="https://pbs.twimg.com/profile_images/1543416722828546048/zBXlhtbI_400x400.jpg"
+                          title="cat burger"
+                          description="by AlwaysAlele on twitter. apparently on microsoft paint. Looks amazing."
+                          tweetLink="https://twitter.com/AlwaysAlele/status/1548045895760891909?s=20&t=_uAP96mj810AzmSbfd2xZQ"
+                        />
+                      </Grid>
+                      {/**end of characters* */}
                     </Grid>
                   </AccordionDetails>
                 </Accordion>
@@ -364,6 +437,7 @@ export default function IndexPage() {
                 id="panel1a-header"
               >
                 <h3>Art references</h3>
+                
               </AccordionSummary>
                 <AccordionDetails>
                   <Accordion className="accordion02">
@@ -385,6 +459,24 @@ export default function IndexPage() {
                             tweetLink="https://twitter.com/EtheringtonBros/status/1479049652729225224?s=20"
                           />
                         </Grid>
+                      <Grid item xl={3} md={4} sm={6}>
+                          <Cardtemplate
+                            bgImgURL="https://pbs.twimg.com/media/E0ejFlsVgAILgxA?format=jpg&name=large"
+                            srcImage="https://pbs.twimg.com/profile_images/1539652049474064384/anAkKXKC_400x400.jpg"
+                            title="how to stylize actual faces" 
+                            description="someone's notes on how to make real people faces work with your own style by hammerings on twitter"
+                            tweetLink="https://twitter.com/hammerings/status/1548121063565180928?s=20&t=_uAP96mj810AzmSbfd2xZQ"
+                          />
+                        </Grid>
+                         <Grid item xl={3} md={4} sm={6}>
+                          <Cardtemplate
+                            bgImgURL="https://pbs.twimg.com/media/FVzHXAcacAUVon5?format=jpg&name=large"
+                            srcImage="https://pbs.twimg.com/profile_images/1383429870907105284/_gN1nkGB_400x400.jpg"
+                            title="process video of diital painting"
+                            description="fan art of willow and hunter by beaniewinnie96 on twitter"
+                            tweetLink="https://twitter.com/beaniewinnie96/status/1546922642531184640?s=20&t=_uAP96mj810AzmSbfd2xZQ"
+                          />
+                      </Grid>
                       </Grid>
                     </AccordionDetails>
                   </Accordion>
@@ -436,6 +528,7 @@ export default function IndexPage() {
             </Accordion>
           </div>
 
+          {/*-------------craft things------------------------ */}
           <div className="bookmarkCat">
             <Accordion className="accordion01">
               <AccordionSummary
@@ -453,6 +546,7 @@ export default function IndexPage() {
             </Accordion>
           </div>
 
+          {/*-----------------animal crossing---------------*/}
           <div className="bookmarkCat">
             <Accordion className="accordion01">
               <AccordionSummary
@@ -527,6 +621,7 @@ export default function IndexPage() {
               </AccordionDetails>
             </Accordion>
           </div>
+          {/*-----------end of animal crossing------------------*/}
         </Container>
         {/*----------------------- end of Container tag --------------------------*/}
       </section>
